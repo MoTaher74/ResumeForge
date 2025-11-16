@@ -1,6 +1,6 @@
 import React from 'react'
 
-function EditResume() {
+const EditResume = () => {
   return (
     <div>
       
