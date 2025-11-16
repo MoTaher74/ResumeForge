@@ -19,7 +19,7 @@ const LandingPage = () => {
         {/** Header */}
         <header className='flex justify-between items-center mb-16'>
           <div className="text-xl font-bold">Resume<span>Forge</span></div>
-          <button className='bg-purple-100 text-sm font-semibold text-black px-7 py-2.5 rounded-lg hover:bg-gray-800 hover:text-white transition-colors cursor-pointer' onClick={()=> !setOpenAuthModal()}>
+          <button className='bg-purple-100 text-sm font-semibold text-black px-7 py-2.5 rounded-lg hover:bg-gray-800 hover:text-white transition-colors cursor-pointer' onClick={()=> setOpenAuthModal(true)}>
             Login / Sign Up
           </button>
         </header>
@@ -77,7 +77,7 @@ const LandingPage = () => {
     </div>
 
     <Modal isOpen={openAuthModal} onClose={()=> {
-      !setOpenAuthModal();
+      setOpenAuthModal(false);
       setCurrentPage("login")
     }}
     hideHeader>

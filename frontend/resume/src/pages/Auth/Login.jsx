@@ -37,7 +37,7 @@ const Login = ({setCurrentPage}) => {
       <form onSubmit={handleLogin}>
     <Input value={email} onChange={({target})=>{
       setEmail(target.value)}} label="Email Address" placeholder = "jon@example.com" type="text"/>
-       {error && <p className='text-red-500 text-xs pb-2.5'>{error}</p>}
+
 
     <Input value={password} onChange={({target})=>{
       setPassword(target.value)}} label="password" placeholder = "Password" type="password"/>
